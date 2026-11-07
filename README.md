@@ -1,6 +1,6 @@
-# Portafolio LegalTech
+﻿# Proyectos de LegalTech e Ingeniería de Datos
 
-Este repositorio contiene los proyectos que he desarrollado como abogado e ingeniero de datos.
+Colección de proyectos que desarrollé combinando mi experiencia como abogado con mis habilidades en ingeniería de datos, automatización y desarrollo de software.
 
 ## Proyecto 1: Analizador de Contratos
 *   **Ubicacion:** `src/`, `main.py`
@@ -13,7 +13,7 @@ Este repositorio contiene los proyectos que he desarrollado como abogado e ingen
 
 ## Proyecto 3: API REST en la Nube
 *   **Ubicacion:** `api/`
-*   **Demo:** https://legaltech-api.onrender.com/docs
+*   **Demo:** TU_URL_AQUI/docs
 *   **Descripcion:** API hecha con FastAPI que recibe texto de contratos y devuelve el analisis de riesgo en tiempo real. Desplegada en Render.
 
 ---
