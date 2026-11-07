@@ -1,8 +1,8 @@
-﻿# Proyectos de LegalTech e Ingeniería de Datos
+﻿# Analizador de Contratos y Proyectos de Datos
 
-Colección de proyectos que desarrollé combinando mi experiencia como abogado con mis habilidades en ingeniería de datos, automatización y desarrollo de software.
+Colección de herramientas y proyectos desarrollados combinando mi experiencia como abogado con mis habilidades en ingeniería de datos, automatización y desarrollo de software.
 
-## Proyecto 1: Analizador de Contratos
+## Proyecto 1: Analizador de Contratos (NLP)
 *   **Ubicacion:** `src/`, `main.py`
 *   **Descripcion:** Pipeline ETL que lee contratos, extrae clausulas de riesgo usando NLP (spaCy) y las guarda en PostgreSQL (Neon.tech).
 *   **Pruebas:** Configuradas con Pytest y GitHub Actions.
