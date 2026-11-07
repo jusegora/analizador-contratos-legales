@@ -1,4 +1,4 @@
-﻿# Portafolio LegalTech
+# Portafolio LegalTech
 
 Este repositorio contiene los proyectos que he desarrollado como abogado e ingeniero de datos.
 
@@ -13,7 +13,7 @@ Este repositorio contiene los proyectos que he desarrollado como abogado e ingen
 
 ## Proyecto 3: API REST en la Nube
 *   **Ubicacion:** `api/`
-*   **Demo:** [Agrega tu URL de Render aqui]/docs
+*   **Demo:** https://legaltech-api.onrender.com/docs
 *   **Descripcion:** API hecha con FastAPI que recibe texto de contratos y devuelve el analisis de riesgo en tiempo real. Desplegada en Render.
 
 ---
