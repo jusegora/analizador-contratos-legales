@@ -5,7 +5,7 @@
 Herramienta desarrollada para procesar contratos de texto, detectar cláusulas de riesgo y almacenarlas en una base de datos PostgreSQL.
 
 ## Funcionamiento
-El sistema lee un archivo de texto, busca palabras clave relacionadas con penalizaciones o confidencialidad usando expresiones regulares, y guarda los hallazgos en la nube. 
+El sistema lee un archivo de texto, busca palabras clave relacionadas con penalizaciones o confidencialidad usando expresiones regulares y guarda los hallazgos en la nube. 
 
 ## Tecnologias
 - Python 3.11
