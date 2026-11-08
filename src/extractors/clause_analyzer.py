@@ -4,33 +4,25 @@ import spacy
 class ClauseAnalyzer:
     def __init__(self):
         self.nlp = spacy.blank("es")
-        self.risk_rules = {
-            "CRITICAL": {
-                "keywords": [r"penalizaci[oó]n", r"cl[aá]usula penal", r"indemnizaci[oó]n"],
-            },
-            "HIGH": {
-                "keywords": [r"confidencialidad", r"no competencia", r"exclusividad"],
-            },
-            "MEDIUM": {
-                "keywords": [r"terminaci[oó]n", r"rescisi[oó]n", r"renovaci[oó]n autom[aá]tica"],
-            }
+        self.reglas = {
+            "CRITICAL": [r"penalizaci[oó]n", r"cl[aá]usula penal", r"indemnizaci[oó]n"],
+            "HIGH": [r"confidencialidad", r"no competencia", r"exclusividad"],
+            "MEDIUM": [r"terminaci[oó]n", r"rescisi[oó]n", r"renovaci[oó]n autom[aá]tica"]
         }
 
-    def analyze_text(self, text):
-        extracted_clauses = []
-        paragraphs = re.split(r'\n\n|\.\s', text)
+    def analizar(self, texto):
+        resultados = []
+        # Separar por parrafos o puntos
+        bloques = re.split(r'\n\n|\.\s', texto)
         
-        for paragraph in paragraphs:
-            if not paragraph.strip():
+        for b in bloques:
+            if not b.strip():
                 continue
-            paragraph_lower = paragraph.lower()
             
-            for risk_level, rule in self.risk_rules.items():
-                for keyword in rule["keywords"]:
-                    if re.search(keyword, paragraph_lower):
-                        extracted_clauses.append({
-                            "clause_text": paragraph.strip(),
-                            "risk_level": risk_level
-                        })
+            b_lower = b.lower()
+            for nivel, palabras in self.reglas.items():
+                for p in palabras:
+                    if re.search(p, b_lower):
+                        resultados.append({"texto": b.strip(), "riesgo": nivel})
                         break
-        return extracted_clauses
+        return resultados
