@@ -1,20 +1,21 @@
-﻿# Analizador de Contratos y Proyectos de Datos
+﻿# Analizador de Contratos LegalTech
 
-Colección de herramientas y proyectos desarrollados combinando mi experiencia como abogado con mis habilidades en ingeniería de datos, automatización y desarrollo de software.
+Este es un proyecto personal que desarrollé para automatizar la lectura de contratos y detectar cláusulas de riesgo.
 
-## Proyecto 1: Analizador de Contratos (NLP)
-*   **Ubicacion:** `src/`, `main.py`
-*   **Descripcion:** Pipeline ETL que lee contratos, extrae clausulas de riesgo usando NLP (spaCy) y las guarda en PostgreSQL (Neon.tech).
-*   **Pruebas:** Configuradas con Pytest y GitHub Actions.
+## Descripcion
+El script lee archivos de texto, usa reglas de expresiones regulares para encontrar palabras clave (como "penalización" o "confidencialidad") y guarda los resultados en una base de datos PostgreSQL en Neon.tech.
 
-## Proyecto 2: Big Data y Machine Learning
-*   **Ubicacion:** `analytics/BigData_Judge_Analysis.ipynb`
-*   **Descripcion:** Analisis de 100,000 casos judiciales sinteticos usando PySpark para detectar patrones y entrenar un modelo predictivo (Regresion Logistica).
+## Como funciona
+- `src/database/db_manager.py`: Maneja la conexion a la base de datos.
+- `src/extractors/clause_analyzer.py`: Contiene la logica para buscar las palabras clave.
+- `src/models/entities.py`: Define las clases de Contrato y Clausula.
+- `main.py`: Ejecuta el flujo completo.
 
-## Proyecto 3: API REST en la Nube
-*   **Ubicacion:** `api/`
-*   **Demo:** TU_URL_AQUI/docs
-*   **Descripcion:** API hecha con FastAPI que recibe texto de contratos y devuelve el analisis de riesgo en tiempo real. Desplegada en Render.
+## Tecnologias
+- Python 3
+- PostgreSQL (Neon.tech)
+- SpaCy (para tokenizacion basica)
 
----
-**Autor:** jusegora
+## Uso
+1. Configurar el archivo `.env` con la URL de la base de datos.
+2. Ejecutar `python main.py`.

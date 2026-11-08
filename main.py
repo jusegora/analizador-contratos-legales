@@ -4,7 +4,7 @@ from src.database.repository import ContractRepository
 from src.extractors.clause_analyzer import ClauseAnalyzer
 from src.models.entities import Contract, Clause
 
-def run_pipeline() -> None:
+def run_pipeline():
     print("Iniciando procesamiento de contratos...")
     
     db = DatabaseManager()
@@ -34,7 +34,6 @@ def run_pipeline() -> None:
         else:
             print("No se encontraron clausulas de riesgo.")
             
-        # Verificacion en base de datos
         print("\nVerificando datos en la nube:")
         with db.connection.cursor() as cursor:
             cursor.execute("""
