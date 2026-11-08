@@ -1,6 +1,8 @@
 ﻿# Analizador de Contratos Legales
 
-Herramienta desarrollada para procesar contratos de texto, detectar clausulas de riesgo y almacenarlas en una base de datos PostgreSQL.
+**Por:** jusegora | Abogado & AI Solutions Architect
+
+Herramienta desarrollada para procesar contratos de texto, detectar cláusulas de riesgo y almacenarlas en una base de datos PostgreSQL.
 
 ## Funcionamiento
 El sistema lee un archivo de texto, busca palabras clave relacionadas con penalizaciones o confidencialidad usando expresiones regulares, y guarda los hallazgos en la nube. 
