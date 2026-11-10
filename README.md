@@ -1,6 +1,6 @@
 ﻿# Analizador de Contratos Legales
 
-**Por:** jusegora | Abogado & AI Solutions Architect | LegalTech & Análisis Forense de Datos
+**Por:** jusegora | legal AI Engineer
 
 Herramienta desarrollada para procesar contratos de texto, detectar cláusulas de riesgo y almacenarlas en una base de datos PostgreSQL.
 
